@@ -27,5 +27,9 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RezaRahmati/idv-poc.git"
   }
 }
