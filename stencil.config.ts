@@ -1,7 +1,14 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'idv',
+  plugins: [
+    sass({
+      injectGlobalPaths: [
+        'src/styles/styles.scss'
+      ]}),
+  ],
   outputTargets: [
     {
       type: 'dist',
@@ -16,9 +23,6 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
-      copy: [
-        { src: 'assets' }
-      ]
     },
   ],
 };

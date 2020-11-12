@@ -3,7 +3,7 @@ import { format } from '../../utils/utils';
 
 @Component({
   tag: 'my-component',
-  styleUrl: 'my-component.css',
+  styleUrl: 'my-component.scss',
   shadow: true,
 })
 export class MyComponent {
@@ -29,7 +29,7 @@ export class MyComponent {
   render() {
     return     <Host>
       <div>Hello, World! I'm {this.getText()}</div>
-      <img src="./assets/logo2.png"></img>
-    </Host>    ;
+      <child-component></child-component>
+    </Host>;
   }
 }
